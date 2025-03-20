@@ -21,7 +21,7 @@
 }
 
 * {
-    font-family:'Readex Pro', 'Courier New', Courier, monospace;
+    font-family: "Readex Pro", "Courier New", Courier, monospace;
     line-height: 1.5em;
     box-sizing: border-box;
     color: var(--mainTextColor);
@@ -32,7 +32,9 @@ body {
     padding: 10px;
 }
 
-p, span, li {
+p,
+span,
+li {
     color: var(--secondaryTextColor);
     font-size: 1em;
 }
@@ -67,21 +69,23 @@ li {
     line-height: 1em;
 }
 
-#bio, a {
+#bio,
+a {
     font-weight: 300;
 }
 
 #profile-pic {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
+    margin: 0;
     overflow: hidden;
 }
 
 #profile-pic img {
     height: 100%;
     position: relative;
-    left: -25%;
+    /* left: -25%; */
 }
 
 #email {
@@ -98,7 +102,7 @@ li {
 #socials--list a {
     font-size: 0.9em;
     color: var(--secondaryTextColor);
-    transition: all .25s ease-in;
+    transition: all 0.25s ease-in;
 }
 
 #socials--list a:hover {
@@ -113,7 +117,7 @@ li {
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
-    font-size: .9em;
+    font-size: 0.9em;
 }
 
 .card--techstack {
@@ -130,7 +134,7 @@ li {
 
 .card--project a {
     color: var(--mainTextColor);
-    transition: all .25s ease-in;
+    transition: all 0.25s ease-in;
 }
 
 .card--project a:hover {
@@ -152,6 +156,4 @@ li {
         padding-top: 1em;
         padding-bottom: 1em;
     }
-
-    
 }

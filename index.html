@@ -1,101 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
-    <title>Ukeme Edet - Portfolio</title>
-</head>
-<body>
-    <div id="container--main">
-        <!-- Hero Section -->
-        <section id="wrapper--hero" class="section--page">
-            <figure id="profile-pic"><img src="./assets/images/profilePic.png" alt="Ukeme Edet's picture"></figure>
-            <div>
-                <h1 id="user-name">Ukeme Edet</h1>
-                <p id="bio">Software Engineer | Backend Developer | Competitive Programmer</p>
-                <p id="email">👉🏾️ ukemeedet2207@gmail.com | 📞 +234 916 233 0659</p>
-            </div>
-        </section>
-        
-        <!-- Social Links -->
-        <section class="section--page">
-            <div id="socials--list">
-                <a href="https://linkedin.com/in/ukeme-edet-12961a227" target="_blank">LinkedIn</a>
-                <a href="https://x.com/ukeme__edet" target="_blank">X</a>
-                <a href="https://github.com/Ukeme-Edet" target="_blank">Github</a>
-                <a href="./assets/resume.pdf" target="_blank">Download Resume</a>
-            </div>
-        </section>
-        
-        <!-- Summary -->
-        <section class="section--page">
-            <h2>About Me</h2>
-            <p>I am an enthusiastic and dedicated programmer with a strong foundation in computer engineering, backend development, and competitive programming. I excel at identifying problems and developing practical, scalable solutions.</p>
-        </section>
-        
-        <!-- Skills -->
-        <section class="section--page">
-            <h2>Skills</h2>
-            <ul id="qualifications--list">
-                <li>✔️ Programming: C, C++, Python, JavaScript, C#, Data Structures, Algorithms</li>
-                <li>✔️ Server Technologies: NGINX, Linux, Ubuntu, Bash, Azure, Flask, FastAPI, ASP.NET, Docker</li>
-                <li>✔️ Database: SQL, MySQL, MongoDB, SQLAlchemy, Redis</li>
-                <li>✔️ Frontend: HTML, CSS, JavaScript, TypeScript, Angular, Tailwind, Netlify</li>
-            </ul>
-        </section>
-        
-        <!-- Work History -->
-        <section id="work-history-wrapper" class="section--page">
-            <h2>Work History</h2>
-            <div class="card--work-history">
-                <strong>Intern Backend Engineer, Codebase Technologies – Lagos, NG (Remote)</strong>
-                <p>March 2025 – Present</p>
-                <ul>
-                    <li>Developed and tested API endpoints using .NET</li>
-                    <li>Deployed public endpoints and contributed to system architecture</li>
-                </ul>
-            </div>
-            <div class="card--work-history">
-                <strong>Backend Engineer (Volunteer), TEDxMaitama – Abuja, NG (Remote)</strong>
-                <p>August 2024 – September 2024</p>
-                <ul>
-                    <li>Developed Flask endpoints serving over 2,000 attendees</li>
-                    <li>Improved API documentation, reducing onboarding time by 30%</li>
-                </ul>
-            </div>
-        </section>
-        
-        <!-- Projects -->
-        <section class="section--page">
-            <h2>Projects</h2>
-            <div class="card--project">
-                <a href="https://whispers-gray.vercel.app" target="_blank"><span>🏆️</span> Whispers - An Anonymous Messaging Platform</a>
-                <ul>
-                    <li>Designed scalable API architecture using Flask</li>
-                    <li>Optimized MySQL queries for high efficiency</li>
-                </ul>
-            </div>
-            <div class="card--project">
-                <a href="#" target="_blank"><span>🏆️</span> 4EvaBraids - Online Hair Braiding Platform</a>
-                <ul>
-                    <li>Co-architected system and data model</li>
-                    <li>Developed 2/3 of the backend, including booking automation</li>
-                    <li>Integrated social media galleries for lightweight storage</li>
-                </ul>
-            </div>
-        </section>
-        
-        <!-- Extracurriculars -->
-        <section class="section--page">
-            <h2>Extracurriculars</h2>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Ukeme Edet – Portfolio</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./styles/style.css" />
+    </head>
+    <body>
+        <nav>
             <ul>
-                <li>🏅 3rd place in Nigeria at IEEEXtreme 18 (2024)</li>
-                <li>🏅 3rd place in DevSprint (2023 & 2024)</li>
-                <li>Specialist rank on Codeforces</li>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
             </ul>
-        </section>
-    </div>
-</body>
+            <a href="./assets/ukeme-edet-resume.pdf" download class="btn"
+                >Download Resume</a
+            >
+        </nav>
+
+        <header id="hero">
+            <h1>Ukeme Edet</h1>
+            <p>Backend Engineer • Competitive Programmer</p>
+            <div class="hero-contact">
+                <a href="mailto:ukemeedet2207@gmail.com">Email</a>
+                <a href="https://x.com/ukeme__edet" target="_blank">X</a>
+                <a href="https://github.com/ukeme-edet" target="_blank"
+                    >GitHub</a
+                >
+            </div>
+        </header>
+
+        <main>
+            <section id="about">
+                <img src="./assets/images/profilePic.png" alt="Profile photo" />
+                <div>
+                    <h2 class="section-title">About Me</h2>
+                    <p>
+                        I’m a dedicated backend engineer building scalable APIs
+                        using Python, C#, FastAPI, Flask & Go. I thrive under
+                        deadlines—having contributed 70% of TEDxMaitama’s
+                        backend for 2,000+ attendees—and I’m passionate about
+                        real-world impact.
+                    </p>
+                    <p>
+                        In competitive programming, I ranked Specialist on
+                        Codeforces, placed 3rd in Nigeria’s IEEEXtreme 18, and
+                        twice in DevSprint. Problem-solving drives me.
+                    </p>
+                </div>
+            </section>
+
+            <section id="projects">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects">
+                    <a
+                        href="https://www.4evabraids.live"
+                        target="_blank"
+                        class="project-card"
+                    >
+                        <img
+                            src="/assets/images/4eva.png"
+                            alt="4EvaBraids"
+                            loading="lazy"
+                        />
+                        <div class="card-content">
+                            <h3>4EvaBraids</h3>
+                            <p>
+                                An online hair‑braiding platform with sub‑200 ms
+                                API responses, Instagram & TikTok integration
+                                (+40% engagement), and automated bookings.
+                            </p>
+                            <div class="tags">
+                                Python · FastAPI · MongoDB · Redis
+                            </div>
+                        </div>
+                    </a>
+
+                    <a
+                        href="https://whispers-gray.vercel.app"
+                        target="_blank"
+                        class="project-card"
+                    >
+                        <img
+                            src="/assets/images/whispers.png"
+                            alt="Whispers"
+                            loading="lazy"
+                        />
+                        <div class="card-content">
+                            <h3>Whispers</h3>
+                            <p>
+                                An anonymous messaging platform using Flask &
+                                MySQL. Documented API (OpenAPI 3.0), optimized
+                                DB queries (-40% latency), and improved
+                                deployment reliability.
+                            </p>
+                            <div class="tags">
+                                Python · Flask · MySQL · Linuz
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section id="resume">
+                <h2 class="section-title">Resume</h2>
+                <p>Download via the button in the navigation bar above.</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Ukeme Edet. All rights reserved.</p>
+        </footer>
+
+        <button id="theme-toggle" class="theme-toggle">Light Mode</button>
+        <script>
+            const toggle = document.getElementById("theme-toggle");
+            toggle.addEventListener("click", () => {
+                document.body.classList.toggle("light-mode");
+                toggle.textContent = document.body.classList.contains(
+                    "light-mode"
+                )
+                    ? "Dark Mode"
+                    : "Light Mode";
+            });
+        </script>
+    </body>
 </html>

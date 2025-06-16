@@ -68,6 +68,44 @@ nav a,
     opacity: 0.9;
 }
 
+/* Hamburger Menu icon */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: var(--fg);
+}
+
+/* RESPONSIVE NAV: show hamburger, hide menu */
+@media (max-width: 800px) {
+    .hamburger {
+        display: flex;
+    }
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: var(--nav-bg);
+        flex-direction: column;
+        width: 200px;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform 0.2s ease-out;
+    }
+    .nav-menu.open {
+        transform: scaleY(1);
+    }
+    .nav-menu a {
+        padding: 1rem 2rem;
+    }
+}
+
 /* Hero with blur overlay */
 header {
     position: relative;

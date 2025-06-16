@@ -23,7 +23,8 @@ body {
     font-family: "Open Sans", sans-serif;
     background: var(--bg);
     color: var(--fg);
-    line-height: 1.6;
+    line-height: 1.6; /* Good line spacing for readability */
+    font-size: 1.05rem; /* Slightly increased base font size for better readability */
     transition: background 0.3s, color 0.3s;
 }
 
@@ -34,6 +35,7 @@ nav {
     background: var(--nav-bg);
     padding: 1rem 2rem;
     display: flex;
+    gap: 2rem;
     justify-content: space-between;
     align-items: center;
     z-index: 10;
@@ -51,6 +53,7 @@ nav a,
 .btn {
     font-weight: 600;
     color: var(--fg);
+    text-align: center;
     text-decoration: none;
 }
 
@@ -68,7 +71,7 @@ nav a,
 /* Hero with blur overlay */
 header {
     position: relative;
-    background: url("../assets/images/cover.png") center/cover no-repeat;
+    background: url("../assets/images/cover.png") center/cover no-repeat; /* Adjusted path for CSS file in subfolder */
     height: 60vh;
     display: flex;
     flex-direction: column;
@@ -89,17 +92,17 @@ header::before {
 header * {
     position: relative;
     z-index: 1;
-    color: white!important; /* Always white per stylesheet issue resolution */
+    color: white !important; /* Always white per stylesheet issue resolution */
 }
 
 header h1 {
     font-family: "Montserrat", sans-serif;
-    font-size: 3rem;
+    font-size: 3rem; /* Kept large for impact in hero section */
     margin-bottom: 0.5rem;
 }
 
 header p {
-    font-size: 1.2rem;
+    font-size: 1.2rem; /* Good size for tagline */
     margin-bottom: 1rem;
 }
 
@@ -107,11 +110,11 @@ header p {
     display: flex;
     gap: 1.5rem;
     flex-wrap: wrap;
-    font-size: 0.95rem;
+    font-size: 0.95rem; /* Slightly smaller for contact links, good contrast */
 }
 
 .hero-contact a {
-    color: white!important;
+    color: white !important;
     text-decoration: none;
     transition: text-decoration 0.3s;
 }
@@ -123,6 +126,8 @@ header p {
 /* Sections */
 section {
     padding: 4rem 2rem;
+    max-width: 1200px; /* Added max-width for better readability on very wide screens */
+    margin: 0 auto; /* Center sections */
 }
 
 .section-title {
@@ -153,10 +158,11 @@ section {
     border-radius: 50%;
     width: 150px;
     height: 150px;
+    flex-shrink: 0; /* Prevent image from shrinking on smaller screens */
 }
 
 #about p {
-    max-width: 600px;
+    max-width: 600px; /* Keep paragraph width for readability */
 }
 
 /* Project Cards */
@@ -196,11 +202,12 @@ section {
 
 .card-content h3 {
     font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem; /* Explicitly set project title size for better hierarchy */
     margin-bottom: 0.5rem;
 }
 
 .card-content p {
-    font-size: 0.95rem;
+    font-size: 1rem; /* Adjusted for better readability */
     margin-bottom: 0.8rem;
 }
 
@@ -220,6 +227,7 @@ section {
     padding: 0.6rem 1rem;
     border-radius: 4px;
     cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Added subtle shadow for visual pop */
 }
 
 /* Footer Styles */
@@ -233,7 +241,19 @@ footer {
 
 /* Responsive */
 @media (max-width: 800px) {
-   .project-card {
+    .project-card {
         width: 100%;
+    }
+    section {
+        padding: 2rem 1rem; /* Adjust padding for smaller screens */
+    }
+    header h1 {
+        font-size: 2.5rem; /* Slightly reduce h1 on smaller screens */
+    }
+    header p {
+        font-size: 1rem; /* Slightly reduce tagline on smaller screens */
+    }
+    .section-title {
+        font-size: 1.8rem; /* Slightly reduce section titles on smaller screens */
     }
 }

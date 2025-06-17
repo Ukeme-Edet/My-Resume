@@ -110,7 +110,7 @@ nav a,
 header {
     position: relative;
     background: url("../assets/images/cover.png") center/cover no-repeat fixed; /* Added 'fixed' for parallax effect */
-    background-position-y: -25rem; /* Adjusted for better visual impact */
+    background-position-y: -10vh; /* Adjusted for better visual impact */
     height: 60vh;
     display: flex;
     flex-direction: column;
